@@ -21,5 +21,3 @@ export default function App2(props) {
     </div>
   );
 }
-
-export default App2;
