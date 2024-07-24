@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/carrerxreact/static/css/main.e6c13ad2.css",
+    "main.js": "/carrerxreact/static/js/main.bf2725a8.js",
+    "index.html": "/carrerxreact/index.html",
+    "main.e6c13ad2.css.map": "/carrerxreact/static/css/main.e6c13ad2.css.map",
+    "main.bf2725a8.js.map": "/carrerxreact/static/js/main.bf2725a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.bf2725a8.js"
+  ]
+}
