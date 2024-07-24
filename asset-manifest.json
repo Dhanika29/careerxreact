@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/carrerxreact/static/css/main.5b455085.css",
-    "main.js": "/carrerxreact/static/js/main.c90ade9f.js",
+    "main.js": "/carrerxreact/static/js/main.031d02a3.js",
     "index.html": "/carrerxreact/index.html",
     "main.5b455085.css.map": "/carrerxreact/static/css/main.5b455085.css.map",
-    "main.c90ade9f.js.map": "/carrerxreact/static/js/main.c90ade9f.js.map"
+    "main.031d02a3.js.map": "/carrerxreact/static/js/main.031d02a3.js.map"
   },
   "entrypoints": [
     "static/css/main.5b455085.css",
-    "static/js/main.c90ade9f.js"
+    "static/js/main.031d02a3.js"
   ]
 }
