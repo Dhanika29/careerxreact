@@ -1,37 +1,24 @@
-import React, { useState } from "react";
-import { GoogleLogin } from '@react-oauth/google';
-
-const clientid =
-"65810230783-61cde81il307rp45evue9su1kts0t062.apps.googleusercontent.com";
-
-
+import React from 'react'
+import { useState,useEffect } from 'react'
+import axios from 'axios'
 export default function App40() {
-  const [flag, setFlag] = useState(false);
-  const [name, setName] = useState();
+    const [data,setData] = useState()
+    const url = "https://jsonplaceholder.typicode.com/users"
 
-  const onSuccess = (res) => {
-    setName(res.profileObj["name"]);
-    console.log("Success", res.profileObj);
-    setFlag(true);
-  };
+const fetchData = async (url) => {
+    const response = await axios.get(url)
+    setData(response.data)
+}
 
-  const onFailure = (res) => {
-console.log("Failed", res);
-  };
+ useEffect(()=>{
+    fetchData(url)
+ },[])
+
   return (
-    <div>
-      {flag ? (
-        <h2>Hello {name}</h2>
-      ) : (
-        <GoogleLogin
-          clientId={clientid}
-          onSuccess={onSuccess}
-          onFailure={onFailure}
-          buttonText="Signin with Google"
-          cookiePolicy={"single_host_origin"}
-          isSignedIn={false}
-        />
-      )}
-    </div>
-  );
+    <ul>
+        {data && data.map((value)=>(
+            <li>{value.name}</li>
+        ))}
+    </ul>
+  )
 }
